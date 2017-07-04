@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <style>
+    .reg-box {
+        height:300px;
+        width: 450px;
+        -webkit-perspective: 1000px;
+        -moz-perspective: 1000px;
+    }
+    
+    .con-reg-center {
+        position: relative;
+        height: 100%;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        -ms-transition: 0.5s;
+        transition: 0.5s;
+        /*-webkit-backface-visibility: hidden;*/
+        /*-moz-backface-visibility: hidden;*/
+        /*backface-visibility: hidden;*/
+    }
+    
+    .reg-con-deal {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background: url("images/cq-main-bac02.jpg") no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        transition-delay: 0.1s;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        /*backface-visibility: hidden;*/
+    }
+    
+    .front_box {
+        z-index: 2;
+        top: 0px;
+    }
+    
+    .back_box {
+        /*z-index: 1;*/
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+		top: 150px;
+    }
+    
+    .hover {
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+    }
+    .hover1 {
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+    }
+    
+    .reg-box:hover .back_box {
+        /*z-index: 3;*/
+    }
+    </style>
+    <script>
+    $(document).ready(function() {
+    	$(".front_box").click(function(){
+    		$(".con-reg-center").addClass("hover").removeClass("hover1");
+    	});
+    	$(".back_box").click(function(){
+    		$(".con-reg-center").addClass("hover1").removeClass("hover");
+    	});
+    });
+    </script>
+</head>
+
+<body>
+    <div class="reg-box">
+        <div class="con-reg-center hei150">
+            <!--front-->
+            <div class="reg-con-deal front_box">
+                <div class="deal-btn"></div>
+                <div class="ctDiv hei150">
+                    <div class="app-ct-tit hei150">
+                        <div class="app-ct-sp">
+                            <h3>区域中心<span>Regional Center</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--back-->
+            <div class="reg-con-deal back_box">
+                <div class="deal-btn rw-deal-btn"></div>
+                <div class="app-ct-tit hei150">
+                    <div class="reg-ct-sp">
+                        <ul>
+                            <li><a href="https://www.baidu.com">工作动态</a></li>
+                            <li><a href="https://www.hao123.com/">专题活动</a></li>
+                            <li><a href="http://www.jb51.net/">区域特色</a></li>
+                            <li><a href="#">合作交流</a></li>
+                        </ul>
+                        <p>打造点线面结合的“区域—省区市—企业”三级区域专利信息服务网络</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
