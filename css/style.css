@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 /*首页*/
+.block-center {
+  float: none;
+  margin: 0 auto;
+}
 
 .sy-bd {
     overflow: hidden;
@@ -26,7 +30,8 @@
 .my-time-bar {
     margin: 230px auto 0;
     padding-top: 125px;
-    width: 1046px;
+    padding-bottom: 211px;
+    /*width: 1046px;*/
     background: url("../images/logo.png") no-repeat center 0;
 }
 
