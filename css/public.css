@@ -12,7 +12,7 @@ textarea{outline:none;border:none;resize:none;}
 .clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
 .clearfix:after{clear:both;}
 
-body{background:#fff;color:#75797c;font-size:14px;font-family:"Microsoft YaHei","微软雅黑","Arial";}
+body{background:red;color:#75797c;font-size:14px;font-family:"Microsoft YaHei","微软雅黑","Arial";}
 
 input,textarea{font-size:14px;font-family:"Microsoft YaHei";color:#9F9F9F;}
 
