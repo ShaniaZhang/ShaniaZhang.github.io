@@ -5,7 +5,80 @@
   float: none;
   margin: 0 auto;
 }
+.section {
+  background: rgba(255,255,255,.9);
+  padding: 60px 0;
+  margin: 20px 0 40px;
+  overflow-x: hidden;
+}
+.section-bg {
+  background-color: #f6f6f6;
+}
+.section-bg1 {
+  background:url('../images/slide_img01.jpg') no-repeat;
+  background-size: cover;
+}
+.main-con-bg{
+    position: fixed;
+    z-index: 1;
+    top:0px;
+    left: 0;
+    width: 100%;
+    /*height: 100%;*/
+    background: url(../images/360wallpaper_dt.jpg) no-repeat;
+}
+/*.adf{
+    position: fixed;
+    z-index: 1;
+    top:0px;
+    left: 0;
+}*/
+.main-con{
+    display: none;
+    position: relative;
+    z-index: 9;
+}
+ .section-title {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #212121;
+}
+.pd20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer{
+    background: rgba(0,0,0,.7);
+}
+.footer-sp{
+    color: #fff;
+    font-size: 1.2em;
+}
 
+/*滚动条 start*/  
+      ::-webkit-scrollbar {  
+        width: 15px;  
+        height: 4px;  
+        display: none;
+      }  
+      /*定义滚动条轨道 内阴影+圆角*/  
+      ::-webkit-scrollbar-track {  
+        /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  */
+        /*background-color: rgba(255,255,255,0) ;*/
+      }  
+      /*定义滑块 内阴影+圆角*/  
+      ::-webkit-scrollbar-thumb {  
+        border-radius: 3px;  
+        /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  */
+        background-color:rgba(225,225,225, 1);  
+      }  
+      /*::-webkit-scrollbar-thumb:hover {  
+        border-radius: 3px;  
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+        background-color:rgba(255,255,255, 1);  
+      }*/
+/***********/
 .sy-bd {
     overflow: hidden;
 }
@@ -20,6 +93,7 @@
 
 .my-body-bac.home-page-ft {
     position: relative;
+    z-index: 10;
     width: 100%;
     height: 100%;
     background: url("../images/my-main-bac06.jpg") no-repeat;
@@ -186,19 +260,21 @@
 
 .my-pic-bk {
     float: right;
-    margin: 80px 108px 0 0;
-    width: 519px;
-    height: 512px;
+    /*margin: 80px 108px 0 0;*/
+    width: 100%;
+    height: 478px;
     background: url("../images/my-main-bac02.png") no-repeat;
+    background-size: 100%;
 }
 
 .my-pc-sp {
     position: absolute;
-    left: -18px;
-    top: 212px;
-    width: 372px;
+    left: 110px;
+    top: 188px;
+    width: 292px;
     height: 285px;
-    background: url("../images/my-main-bac03.png") no-repeat;
+    background: url("../images/slide_img01.jpg") no-repeat;
+    background-size: cover;
 }
 
 .app-vs1 {

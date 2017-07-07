@@ -3,15 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Shania.zhang Home</title>
+    <title>Shania.Zhang Home</title>
+    <link rel="shortcut icon" href="images/icon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/public.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/my-js.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script>
+    window.onload = function() {
+        // wow页面滚动
+        new WOW().init();
+    }
+    </script>
 </head>
 
 <body>
+    <div class="main-con-bg"></div>
+    <!-- 启动页 -->
     <div class="my-body-bac home-page-ft">
         <div class="container">
             <div class="row">
@@ -26,6 +37,45 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- end 启动页 -->
+    <div class="main-con">
+        <div class="container">
+            <!-- about me -->
+            <section class="section">
+                <div class="row">
+                    <div class="col-md-11 block-center">
+                        <div class="col-md-5">
+                            <div class="phone-image wow fadeInLeft" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                                <img src="images/my-main-bac02.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <header class="section-header alt margin-top-100 wow fadeInDown" data-wow-delay=".15s" style="visibility: hidden; animation-delay: 0.15s; animation-name: none;">
+                                <h2 class="section-title">Skip The Small Talk. Meet For a First Date.</h2>
+                                <p>Dine is a dating app that isn't about superficial love at first sight, but an opportunity to experience someone's company and a new culinary adventure. Aren't we all tired of the endless swiping left to right see that we only matched with someone we didn't like in the first place? Dine introduces to high quality potential matches Daily. Simply request them to Dine and if they accept, skip the small talk and meet up for a first date over the best food and drinks around!</p>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- about me end -->
+            <section class="section">
+                <div class="row">
+                    <div class="col-md-11 block-center">
+                        <div class="col-md-5">
+                        </div>
+                        <div class="col-md-7"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer text-center">
+            <div class="container pd20">
+                <img src="images/my-logo2.png" class="">
+                <p class="footer-sp">© 2017 Shania.Zhang All Rights Reserved</p class="footer-sp">
+            </div>
+        </footer>
     </div>
 </body>
 
