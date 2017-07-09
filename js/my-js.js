@@ -108,12 +108,12 @@ $j(document).ready(function() {
         // }, 800);
     }
     // Sticky Header
-    $(window).scroll(function () {
+    $j(window).scroll(function () {
       if ($(this).scrollTop() > 200) {
-        $('.navbar').addClass("sticky-nav");
+        $j('.navbar').addClass("sticky-nav");
       }
       else {
-        $('.navbar').removeClass("sticky-nav");
+        $j('.navbar').removeClass("sticky-nav");
       }
     });
 });
