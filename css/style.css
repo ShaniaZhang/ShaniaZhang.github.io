@@ -82,6 +82,8 @@
   -ms-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
   -o-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+}
+.sticky-nav.navbar{
   top: 0;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
