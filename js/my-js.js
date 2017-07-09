@@ -107,6 +107,15 @@ $j(document).ready(function() {
         //     $j(".my-pc-sp").removeClass("pc-vs1").addClass("pc-vs2");
         // }, 800);
     }
+    // Sticky Header
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 200) {
+        $('.navbar').addClass("sticky-nav");
+      }
+      else {
+        $('.navbar').removeClass("sticky-nav");
+      }
+    });
 });
 window.onresize = function() {
     //body背景自适应
