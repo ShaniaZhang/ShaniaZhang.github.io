@@ -104,7 +104,10 @@
 .navbar-nav > li.active a {
   color: #D19A04;
 }
-
+.rw-navbar-brand{
+  height:66px;
+  padding:5px 10px;
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .navbar {
     text-align: center;
