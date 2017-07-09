@@ -68,17 +68,17 @@ $j(document).ready(function() {
             $j(".time-bar p").css({ "width": wth + chgWth });
         }, 10);
     }
-    timeNumChg();
+//     timeNumChg();
 
-    function timeNumChg() {
-        var timer = window.setInterval(function() {
-            var timeNum = parseInt($j(".time-num span").html());
-            if (timeNum >= 10) {
-                return;
-            }
-            $j(".time-num span").html(timeNum + 1);
-        }, 1000);
-    }
+//     function timeNumChg() {
+//         var timer = window.setInterval(function() {
+//             var timeNum = parseInt($j(".time-num span").html());
+//             if (timeNum >= 10) {
+//                 return;
+//             }
+//             $j(".time-num span").html(timeNum + 1);
+//         }, 1000);
+//     }
     //首页点击next箭头
     $j(".my-sy-next").click(function() {
         enterHomeTow(800);
