@@ -7,7 +7,7 @@
 }
 .section {
   background: rgba(255,255,255,.9);
-  padding: 60px 0;
+  padding: 65px 0;
   margin: 20px 0 40px;
   overflow-x: hidden;
 }
@@ -20,6 +20,15 @@
 .section-bg1 {
   background:url('../images/slide_img01.jpg') no-repeat;
   background-size: cover;
+}
+.section-banner{
+    position: relative;
+    margin-bottom: 40px;
+    /*height: 600px;*/
+    overflow: hidden;
+}
+.banner-bg{
+    width: 100%;
 }
 .main-con-bg{
     position: fixed;
@@ -135,6 +144,58 @@
 .sticky-scroll-top.scroll-top {
   bottom: 30px;
   opacity: 1;
+}
+.review-carousel{
+    position: relative;
+    z-index: 2;
+    margin: 0 -15px;
+    height: 310px;
+}
+.item-con{
+    height: 250px;
+}
+.item-con h2{
+    display: inline-block;
+    padding: 0 40px;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 2em;
+    line-height: 2em;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.item-con p{
+    margin: 15px auto 0;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    max-width: 600px;
+    color: #fff;
+}
+.banner-img{
+    display: block;
+    margin: 20px auto 0;
+    width: 60px!important;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.review-carousel .owl-controls .owl-dot {
+  background-color: rgba(255, 255, 255, 1);
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  margin: 0 5px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.review-carousel .owl-controls .owl-dot.active {
+  background-color: #D19A04;
+  border:1px solid #fff;
+}
+.review-carousel .owl-controls .owl-dots{
+    text-align: center;
 }
 /*滚动条 start*/  
       ::-webkit-scrollbar {  

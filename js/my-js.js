@@ -3,12 +3,21 @@
  */
 var $j = jQuery.noConflict();
 $j(document).ready(function() {
+    $j('.review-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 9000,
+        items: 1,
+        nav: true,
+        navText: ['<i class="ion-ios-arrow-thin-left"><i/>', '<i class="ion-ios-arrow-thin-right"><i/>']
+    });
     //body高度自适应
     bacCover($j("body"));
     //启动页时间进度条
     $j(".time-bar p").addClass('wth100');
     //启动页时间计数器
     timeNumChg();
+
     function timeNumChg() {
         var timer = window.setInterval(function() {
             var timeNum = parseInt($j(".time-num span").html());
@@ -35,24 +44,23 @@ $j(document).ready(function() {
      * @return {[type]} null
      */
     function enterHomeTow(animateTime) {
-        var ft_height=$j('.my-body-bac.home-page-ft').height();
-        $j(".main-con-bg").css('height',ft_height+'px');
+        var ft_height = $j('.my-body-bac.home-page-ft').height();
+        $j(".main-con-bg").css('height', ft_height + 'px');
         $j(".my-body-bac.home-page-ft").stop().animate({ 'top': -ft_height + 'px' }, animateTime);
-        $j(".main-con").css({'margin-top':-ft_height+'px','display':'block'});
+        $j(".main-con").css({ 'margin-top': -ft_height + 'px', 'display': 'block' });
         setTimeout(function() {
             $j('.navbar').addClass("sticky-nav");
         }, animateTime);
     }
     // Sticky Header
-    $j(window).scroll(function () {
-      if ($j(this).scrollTop() > 50) {
-        // $j('.navbar').addClass("sticky-nav");
-        $j('.scroll-top').addClass("sticky-scroll-top");
-      }
-      else {
-        // $j('.navbar').removeClass("sticky-nav");
-        $j('.scroll-top').removeClass("sticky-scroll-top");
-      }
+    $j(window).scroll(function() {
+        if ($j(this).scrollTop() > 50) {
+            // $j('.navbar').addClass("sticky-nav");
+            $j('.scroll-top').addClass("sticky-scroll-top");
+        } else {
+            // $j('.navbar').removeClass("sticky-nav");
+            $j('.scroll-top').removeClass("sticky-scroll-top");
+        }
     });
 });
 window.onresize = function() {

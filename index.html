@@ -5,23 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shania.Zhang Home</title>
-    <link rel="shortcut icon" href="images/icon.png"/>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/ionicons.min.css"/>
-    <link rel="stylesheet" href="css/clean-blog.min.css"/>
-    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="shortcut icon" href="images/icon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/clean-blog.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/public.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/my-js.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <script>
-    window.onload = function() {
-        // wow页面滚动
-        new WOW().init();
-    }
-    </script>
 </head>
 
 <body>
@@ -45,36 +36,66 @@
     </div>
     <!-- end 启动页 -->
     <nav class="navbar">
-      <div class="container">
-        <!--|Navbar Header|-->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <i class="ion-navicon"></i>
-          </button>
-
-          <!--|Site Brand|-->
-          <a class="navbar-brand rw-navbar-brand" href="#"><img src="images/my-logo2.png" alt="" style="width: 58px; height: 53px;"></a>
-        </div> <!--|End Navbar Header|-->
-
-        <!--|Nav|-->
-        <!-- <div class="collapse navbar-collapse" id="primary-nav"> -->
-        <div class="navbar-collapse collapse" id="primary-nav" aria-expanded="false" style="height: 1px;">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#intro">Home</a></li>
-            <li class=""><a href="#section-1">About</a></li>
-            <li class=""><a href="#section-2">How to Dine</a></li>
-            <li class=""><a href="#review">Testimonials</a></li>
-            <li class=""><a href="#screenshots">Inside Dine</a></li>
-            <li class=""><a href="#download">Download</a></li>
-          </ul>
-        </div><!--|End Nav|-->
-      </div>
+        <div class="container">
+            <!--|Navbar Header|-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="ion-navicon"></i>
+                </button>
+                <!--|Site Brand|-->
+                <a class="navbar-brand rw-navbar-brand" href="#"><img src="images/my-logo2.png" alt="" style="width: 58px; height: 53px;"></a>
+            </div>
+            <!--|End Navbar Header|-->
+            <!--|Nav|-->
+            <!-- <div class="collapse navbar-collapse" id="primary-nav"> -->
+            <div class="navbar-collapse collapse" id="primary-nav" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#intro">Home</a></li>
+                    <li class=""><a href="#section-1">About</a></li>
+                    <li class=""><a href="#section-2">How to Dine</a></li>
+                    <li class=""><a href="#review">Testimonials</a></li>
+                    <li class=""><a href="#screenshots">Inside Dine</a></li>
+                    <li class=""><a href="#download">Download</a></li>
+                </ul>
+            </div>
+            <!--|End Nav|-->
+        </div>
     </nav>
     <div class="main-con">
         <div class="container" id="contop">
+            <!-- banner -->
+            <section class="section-banner section-one">
+                <!-- <img src="images/work.jpg" alt="" class="banner-bg"> -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 block-center">
+                            <!--|Review Carousel|-->
+                            <div class="review-carousel">
+                                <div class="item-con text-center">
+                                    <h2>This is my banner</h2>
+                                    <p>“welcome to my home page,welcome to my home page,welcome to my home page,welcome to my home page”</p>
+                                    <img src="images/360wallpaper_dt.jpg" alt="" class="banner-img">
+                                </div>
+                                <div class="item-con text-center">
+                                    <h2>This is my banner2</h2>
+                                    <p>“welcome to my home page,welcome to my home page,welcome to my home page,welcome to my home page”</p>
+                                    <img src="images/360wallpaper_dt.jpg" alt="" class="banner-img">
+                                </div>
+                                <div class="item-con text-center">
+                                    <h2>This is my banner3</h2>
+                                    <p>“welcome to my home page,welcome to my home page,welcome to my home page,welcome to my home page”</p>
+                                    <img src="images/360wallpaper_dt.jpg" alt="" class="banner-img">
+                                </div>
+                            </div>
+                            <!--|Review Carousel end|-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- banner end -->
             <!-- about me -->
-            <section class="section section-one" id="about">
+            <section class="section" id="about">
                 <div class="row">
                     <div class="col-md-11 block-center">
                         <div class="col-md-5">
@@ -104,12 +125,25 @@
         </div>
         <footer class="footer text-center">
             <div class="container pd20">
-                <img src="images/my-logo2.png" class="" style="width:7%;">
+                <img src="images/my-logo2.png" class="" style="width:8.78%;">
                 <p class="footer-sp">© 2017 Shania.Zhang All Rights Reserved</p class="footer-sp">
             </div>
         </footer>
         <a class="scroll-top" href="#contop"><i class="ion-android-navigate"></i></a>
     </div>
+    
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/my-js.js"></script>
+    <script>
+    //banner轮播
+    window.onload = function() {
+        // wow页面滚动
+        new WOW().init();
+    }
+    </script>
 </body>
 
 </html>
