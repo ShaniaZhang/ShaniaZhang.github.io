@@ -211,8 +211,14 @@
     height: 2px;
     border-radius: 2px;
     background: #e5004f;
+    transition:width linear 10s;
+    -moz-transition:width linear 10s; /* Firefox 4 */
+    -webkit-transition:width linear 10s; /* Safari and Chrome */
+    -o-transition:width linear 10s; /* Opera */
 }
-
+.wth100{
+    width: 100%!important;
+}
 .time-num {
     margin: 0 auto;
     width: 120px;
