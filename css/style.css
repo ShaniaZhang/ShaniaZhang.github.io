@@ -53,6 +53,7 @@
     padding-bottom: 20px;
 }
 .footer{
+    padding: 0;
     background: rgba(0,0,0,.7);
 }
 .footer-sp{
@@ -83,6 +84,11 @@
   -o-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
 }
+.navbar-toggle {
+  font-size: 3em;
+  line-height: 1;
+  padding: 0;
+}
 .sticky-nav.navbar{
   top: 0;
   -webkit-transition: all ease 0.5s;
@@ -110,12 +116,26 @@
   height:66px;
   padding:5px 10px;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .navbar {
-    text-align: center;
-  }
+
+.scroll-top {
+  position: fixed;
+  right: 30px;
+  bottom: -200px;
+  color: #aaa;
+  font-size: 2em;
+  z-index: 999;
+  opacity: 0;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.scroll-top:hover, .scroll-top:focus, .scroll-top:active {
+  color: #D19A04;
 }
 
+.sticky-scroll-top.scroll-top {
+  bottom: 30px;
+  opacity: 1;
+}
 /*滚动条 start*/  
       ::-webkit-scrollbar {  
         width: 15px;  
@@ -160,15 +180,19 @@
     background-size: cover;
     overflow: hidden;
 }
-.aaa{
-    background: red;
+.time-bar-bk{
+    margin: 230px auto 0;
 }
 .my-time-bar {
-    margin: 230px auto 0;
-    padding-top: 125px;
+    /*padding-top: 130px;*/
     padding-bottom: 211px;
     /*width: 1046px;*/
-    background: url("../images/logo.png") no-repeat center 0;
+    /*background: url("../images/logo.png") no-repeat center 0;*/
+    /*background-size: 100%;*/
+}
+.my-time-bar img{
+    /*width: 100%;*/
+    margin-bottom: 10px;
 }
 
 .time-bar {
@@ -194,7 +218,7 @@
     width: 120px;
     font-size: 34px;
     color: #eeeeee;
-    line-height: 70px;
+    line-height: 74px;
     font-family: 'Arial';
     text-align: center;
 }
@@ -1303,3 +1327,31 @@
 }
 .rw-web-bk{float: right;margin-top: 77px;width: 418px;height: 409px;background: url("../images/my-main-bac24.png") no-repeat;}
 .web-ipad-bac{position: absolute;left: 0;bottom: 0;width: 226px;height: 205px;background: url("../images/my-main-bac25.png") no-repeat;}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .my-time-bar img{
+    width: 100%;
+  }
+  .time-bar {
+    height: .1em;
+  }
+  .time-num {
+    font-size: 1.6em;
+    line-height: 2em;
+  }
+  .navbar-collapse {
+    max-height: 260px;
+    overflow-x: hidden;
+  }
+
+  .navbar-nav > li > a {
+    padding: 8px 15px;
+    border-top: 1px solid;
+    border-top-color: rgba(0, 0, 0, 0.1);
+  }
+}

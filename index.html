@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shania.Zhang Home</title>
     <link rel="shortcut icon" href="images/icon.png"/>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/ionicons.min.css"/>
+    <link rel="stylesheet" href="css/clean-blog.min.css"/>
     <link rel="stylesheet" href="css/animate.css"/>
     <link rel="stylesheet" href="css/public.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/my-js.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script>
@@ -27,8 +30,9 @@
     <div class="my-body-bac home-page-ft">
         <div class="container">
             <div class="row">
-                <div class="col-xs-11 col-ms-11 col-md-11 block-center">
+                <div class="col-xs-11 col-ms-11 col-md-11 block-center time-bar-bk">
                     <div class="my-time-bar">
+                        <img src="images/logo.png" alt="" class="center-block">
                         <div class="time-bar">
                             <p></p>
                         </div>
@@ -54,7 +58,8 @@
         </div> <!--|End Navbar Header|-->
 
         <!--|Nav|-->
-        <div class="collapse navbar-collapse" id="primary-nav">
+        <!-- <div class="collapse navbar-collapse" id="primary-nav"> -->
+        <div class="navbar-collapse collapse" id="primary-nav" aria-expanded="false" style="height: 1px;">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#intro">Home</a></li>
             <li class=""><a href="#section-1">About</a></li>
@@ -67,14 +72,14 @@
       </div>
     </nav>
     <div class="main-con">
-        <div class="container">
+        <div class="container" id="contop">
             <!-- about me -->
-            <section class="section section-one">
+            <section class="section section-one" id="about">
                 <div class="row">
                     <div class="col-md-11 block-center">
                         <div class="col-md-5">
                             <div class="phone-image wow fadeInLeft" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
-                                <img src="images/my-main-bac02.png" alt="">
+                                <img src="images/my-main-bac02.png" alt="" style="width:100%;">
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -103,6 +108,7 @@
                 <p class="footer-sp">© 2017 Shania.Zhang All Rights Reserved</p class="footer-sp">
             </div>
         </footer>
+        <a class="scroll-top" href="#contop"><i class="ion-android-navigate"></i></a>
     </div>
 </body>
 

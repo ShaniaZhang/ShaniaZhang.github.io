@@ -3,6 +3,7 @@
  */
 var $j = jQuery.noConflict();
 $j(document).ready(function() {
+    bacCover($j("body"));
     //首页时间进度条定时器
     timeChange();
 
@@ -59,24 +60,27 @@ $j(document).ready(function() {
         $j(".main-con").css({'margin-top':-ft_height+'px','display':'block'});
         setTimeout(function() {
             $j('.navbar').addClass("sticky-nav");
+            
         //     //css3动画
         //     $j(".my-pic-bk").removeClass("app-vs1").addClass("app-vs2");
         //     $j(".my-pc-sp").removeClass("pc-vs1").addClass("pc-vs2");
         }, animateTime);
     }
     // Sticky Header
-    // $j(window).scroll(function () {
-    //   if ($j(this).scrollTop() > 200) {
-    //     $j('.navbar').addClass("sticky-nav");
-    //   }
-    //   else {
-    //     $j('.navbar').removeClass("sticky-nav");
-    //   }
-    // });
+    $j(window).scroll(function () {
+      if ($j(this).scrollTop() > 50) {
+        // $j('.navbar').addClass("sticky-nav");
+        $j('.scroll-top').addClass("sticky-scroll-top");
+      }
+      else {
+        // $j('.navbar').removeClass("sticky-nav");
+        $j('.scroll-top').removeClass("sticky-scroll-top");
+      }
+    });
 });
 window.onresize = function() {
     //body背景自适应
-    bacCover($j(".my-body-bac.home-page-two"));
+    bacCover($j("body"));
 };
 //body背景自适应
 function bacCover(div) {
