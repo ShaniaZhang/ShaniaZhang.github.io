@@ -39,10 +39,12 @@ var $j = jQuery.noConflict();
          */
         function enterHomeTow(animateTime) {
             var ft_height = $j('.my-body-bac.home-page-ft').height();
+            $j(".my-body-bac.home-page-ft").css('top',-ft_height+'px');
             $j(".main-con-bg").css('height', ft_height + 'px');
-            $j(".my-body-bac.home-page-ft").stop().animate({ 'top': -ft_height + 'px' }, animateTime);
-            $j(".main-con").css({ 'margin-top': -ft_height + 'px', 'display': 'block' });
+            // $j(".my-body-bac.home-page-ft").stop().animate({ 'top': -ft_height + 'px' }, animateTime);
+            // $j(".main-con").css({ 'margin-top': -ft_height + 'px', 'display': 'block' });
             setTimeout(function() {
+                $j('body').removeClass("stop-scrolling");
                 $j('.navbar').addClass("sticky-nav");
             }, animateTime);
         }
@@ -61,6 +63,7 @@ var $j = jQuery.noConflict();
     $j('.review-carousel').owlCarousel({
         items: 1,
         autoPlay: true,
+        // paginationSpeed:1200,
     });
     window.onresize = function() {
         //body背景自适应

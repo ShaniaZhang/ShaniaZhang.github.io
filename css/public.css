@@ -15,4 +15,8 @@ textarea{outline:none;border:none;resize:none;}
 body{color:#75797c;font-size:14px;font-family:"Microsoft YaHei","微软雅黑","Arial";background:#fff;}
 
 input,textarea{font-size:14px;font-family:"Microsoft YaHei";color:#9F9F9F;}
-
+/*启动页时禁止滚动条滚动*/
+body.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
