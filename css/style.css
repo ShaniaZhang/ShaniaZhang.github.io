@@ -147,12 +147,6 @@
 }
 .review-carousel{
     position: relative;
-    z-index: 2;
-    margin: 0 -15px;
-    height: 310px;
-}
-.item-con{
-    height: 250px;
 }
 .item-con h2{
     display: inline-block;
@@ -179,23 +173,27 @@
     border-radius: 50%;
     overflow: hidden;
 }
-.review-carousel .owl-controls .owl-dot {
-  background-color: rgba(255, 255, 255, 1);
+.item-con p::before {
+  content: '\f347';
+  color: #fff;
+  font-family: ionicons;
+  font-size: 1.5em;
+  margin-right: 5px;
+  opacity: .8;
+}
+.item-con p::after {
   display: inline-block;
-  height: 9px;
-  width: 9px;
-  margin: 0 5px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-}
-.review-carousel .owl-controls .owl-dot.active {
-  background-color: #D19A04;
-  border:1px solid #fff;
-}
-.review-carousel .owl-controls .owl-dots{
-    text-align: center;
+  content: '\f347';
+  color: #fff;
+  font-family: ionicons;
+  font-size: 1.5em;
+  margin-left: 5px;
+  opacity: .8;
+  transform:rotate(180deg);
+  -ms-transform:rotate(180deg);     /* IE 9 */
+  -moz-transform:rotate(180deg);    /* Firefox */
+  -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+  -o-transform:rotate(180deg);  /* Opera */
 }
 /*滚动条 start*/  
       ::-webkit-scrollbar {  

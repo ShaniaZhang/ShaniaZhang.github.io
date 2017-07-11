@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/ionicons.min.css" />
     <link rel="stylesheet" href="css/clean-blog.min.css" />
+    <!-- <link rel="stylesheet" href="css/owl.transitions.css" /> -->
+    <link rel="stylesheet" href="css/owl.theme.css" />
     <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/public.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"></script>
 </head>
 
 <body>
@@ -74,17 +77,22 @@
                             <div class="review-carousel">
                                 <div class="item-con text-center">
                                     <h2>This is my banner</h2>
-                                    <p>“welcome to my home page,welcome to my home page,welcome to my home page,welcome to my home page”</p>
+                                    <p>welcome to my home page,welcome to my home page,welcome to my home page,welcome to my home page</p>
                                     <img src="images/360wallpaper_dt.jpg" alt="" class="banner-img">
                                 </div>
                                 <div class="item-con text-center">
                                     <h2>This is my banner2</h2>
-                                    <p>“welcome to my home page,welcome to my home page,welcome to my home page,welcome to my home page”</p>
+                                    <p>welcome to my home page,welcome to my home page,welcome to my home page,welcome to my home page</p>
                                     <img src="images/360wallpaper_dt.jpg" alt="" class="banner-img">
                                 </div>
                                 <div class="item-con text-center">
                                     <h2>This is my banner3</h2>
-                                    <p>“welcome to my home page,welcome to my home page,welcome to my home page,welcome to my home page”</p>
+                                    <p>welcome to my home page,welcome to my home page,welcome to my home page,welcome to my home page</p>
+                                    <img src="images/360wallpaper_dt.jpg" alt="" class="banner-img">
+                                </div>
+                                <div class="item-con text-center">
+                                    <h2>This is my banner4</h2>
+                                    <p>welcome to my home page,welcome to my home page,welcome to my home page,welcome to my home page</p>
                                     <img src="images/360wallpaper_dt.jpg" alt="" class="banner-img">
                                 </div>
                             </div>
@@ -131,8 +139,7 @@
         </footer>
         <a class="scroll-top" href="#contop"><i class="ion-android-navigate"></i></a>
     </div>
-    
-    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
@@ -141,7 +148,9 @@
     //banner轮播
     window.onload = function() {
         // wow页面滚动
-        new WOW().init();
+        new WOW({
+            mobile: false
+        }).init();
     }
     </script>
 </body>
