@@ -150,7 +150,7 @@
 }
 .item-con h2{
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 10%;
     margin-top: 40px;
     color: #fff;
     font-size: 2em;
@@ -1418,5 +1418,8 @@
     padding: 8px 15px;
     border-top: 1px solid;
     border-top-color: rgba(0, 0, 0, 0.1);
+  }
+  .item-con h2{
+    font-size: 1.6em;
   }
 }

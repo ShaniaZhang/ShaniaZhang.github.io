@@ -15,11 +15,11 @@ var $j = jQuery.noConflict();
         function timeNumChg() {
             var timer = window.setInterval(function() {
                 var timeNum = parseInt($j(".time-num span").html());
-                if (timeNum == 10) {
+                $j(".time-num span").html(timeNum + 1);
+                if (timeNum == 9) {
                     enterHomeTow(800);
                     return;
                 }
-                $j(".time-num span").html(timeNum + 1);
             }, 1000);
         }
         //启动页点击next箭头
