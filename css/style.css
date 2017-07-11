@@ -23,7 +23,7 @@
 }
 .section-banner{
     position: relative;
-    margin-bottom: 40px;
+    /*margin-bottom: 40px;*/
     /*height: 600px;*/
     overflow: hidden;
 }
@@ -150,7 +150,7 @@
 }
 .item-con h2{
     display: inline-block;
-    padding: 0 10%;
+    padding: 0 6%;
     margin-top: 40px;
     color: #fff;
     font-size: 2em;
@@ -1421,5 +1421,8 @@
   }
   .item-con h2{
     font-size: 1em;
+  }
+  .item-con p{
+    color: #869791;
   }
 }
