@@ -1638,6 +1638,6 @@
     font-size: 1.6em;
   }
   .brief-pic{
-    min-height: 220px;
+    height: 220px;
   }
 }
