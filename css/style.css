@@ -1629,9 +1629,15 @@
     margin: 1px 0;
   }
   .section-brief{
-    padding: 50px;
+    padding: 40px;
   }
   .brief-mask:after{
     border-width: 20px;
+  }
+  .brief-tit h2{
+    font-size: 1.6em;
+  }
+  .brief-pic{
+    min-height: 220px;
   }
 }
