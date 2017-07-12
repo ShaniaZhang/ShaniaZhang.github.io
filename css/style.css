@@ -24,7 +24,7 @@
 .section-brief{
   position: relative;
   padding: 110px;
-  height: 500px;
+  /*height: 500px;*/
   /*opacity: 0.8;*/
   margin: 20px 0 40px;
   color: #fff;
@@ -60,13 +60,19 @@
 }
 .brief-pic{
     display: block;
-    width:100%;
+    max-width:100%;
     height:auto;
     min-height: 240px;
     border-radius: 2px;
 }
 .banner-bg{
     width: 100%;
+}
+.section-brief .brief-pic{
+  float: left;
+}
+.section-brief .brief-sp{
+  float: right;
 }
 .brief-tit{
     padding:0 0 10px 49px;
@@ -407,8 +413,8 @@
     background: url("../images/my-main-bac06.jpg") no-repeat;
     background-size: cover;
     overflow: hidden;
-  -webkit-transition:all 0.8s ease-out;
-  transition:all 0.8s ease-out;
+  -webkit-transition:all 1.2s ease-out;
+  transition:all 1.2s ease-out;
 }
 .hide-start-page{
     
@@ -1567,6 +1573,22 @@
 .rw-web-bk{float: right;margin-top: 77px;width: 418px;height: 409px;background: url("../images/my-main-bac24.png") no-repeat;}
 .web-ipad-bac{position: absolute;left: 0;bottom: 0;width: 226px;height: 205px;background: url("../images/my-main-bac25.png") no-repeat;}
 
+@media screen and (max-width: 991px) {
+  .brief-tit{
+    padding-left: 0;
+  }
+  .section-brief .brief-pic,
+  .section-brief .brief-sp{
+    float: none;
+  }
+  .section-brief .brief-sp{
+    margin-top: 20px;
+  }
+  .section-brief{
+    background: #f4f9fd url('../images/my-pic.jpg') no-repeat right;
+    background: 100%;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .navbar {
     text-align: center;
@@ -1605,5 +1627,11 @@
   }
   .project-item{
     margin: 1px 0;
+  }
+  .section-brief{
+    padding: 50px;
+  }
+  .brief-mask:after{
+    border-width: 20px;
   }
 }

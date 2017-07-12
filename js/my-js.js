@@ -39,7 +39,7 @@ var $j = jQuery.noConflict();
          */
         function enterHomeTow(animateTime) {
             var ft_height = $j('.my-body-bac.home-page-ft').height();
-            $j(".my-body-bac.home-page-ft").css('top',-ft_height+'px');
+            $j(".my-body-bac.home-page-ft").css('top',-1000+'px');
             $j(".main-con-bg").css('height', ft_height + 'px');
             // $j(".my-body-bac.home-page-ft").stop().animate({ 'top': -ft_height + 'px' }, animateTime);
             // $j(".main-con").css({ 'margin-top': -ft_height + 'px', 'display': 'block' });
