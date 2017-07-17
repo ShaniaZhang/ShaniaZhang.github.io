@@ -1642,7 +1642,7 @@
   }
   .section-brief{
     background: #f4f9fd url('../images/my-pic.jpg') no-repeat right;
-    background: 100%;
+    background-size: 100%;
   }
   .my-exp-line{
     background: none;
