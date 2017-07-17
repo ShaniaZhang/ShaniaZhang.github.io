@@ -63,6 +63,10 @@ var $j = jQuery.noConflict();
     $j('.review-carousel').owlCarousel({
         items: 1,
         autoPlay: true,
+        singleItem:true,
+        // itemsDesktop:[1199,1],
+        // itemsDesktopSmall:[979,1],
+        // itemsTablet:[768,1],
         // paginationSpeed:1200,
     });
     window.onresize = function() {
