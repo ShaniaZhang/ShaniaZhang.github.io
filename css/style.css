@@ -1644,6 +1644,15 @@
     background: #f4f9fd url('../images/my-pic.jpg') no-repeat right;
     background: 100%;
   }
+  .my-exp-line{
+    background: none;
+  }
+  .my-exp-icon{
+    display: none;
+  }
+  .my-experience-con.text-right{
+    text-align: left!important;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .navbar {
