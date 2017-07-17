@@ -1695,6 +1695,7 @@
   }
   .section-brief{
     padding: 40px;
+    background: none;
   }
   .brief-mask:after{
     border-width: 20px;
