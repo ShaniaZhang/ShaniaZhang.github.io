@@ -292,6 +292,7 @@
   font-size: 2.5em;
   font-weight: 400;
   margin-bottom: 15px;
+  margin-top: 10px;
 }
 .project-item{
     position: relative;
@@ -421,7 +422,7 @@
     border-radius: 50%;
 }
 .my-exp-line{
-  padding-top: 10px;
+  padding-top: 20px;
   background: url('../images/point.jpg') repeat-y center top;
 }
 .my-project-experience .my-experience-time{
@@ -440,6 +441,27 @@
 }
 .my-project-experience .my-experience-time.pull-left:after{
   border-right-color: #D19A04;
+}
+.phone-image{
+  position: relative;
+}
+.ab-my-pic{
+  position: absolute;
+  right: 8px;
+  top: 98px;
+  width: 72%;
+}
+i.start-word{
+  display: inline-block;
+  margin-right: 3px;
+  width: 40px;
+  height: 40px;
+  color:#fff;
+  font-size: 22px;
+  text-align: center;
+  line-height: 40px;
+  font-style: normal;
+  background: #ffb05f;
 }
 /*滚动条 start*/  
       ::-webkit-scrollbar {  
