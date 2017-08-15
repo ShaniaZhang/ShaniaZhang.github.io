@@ -1727,7 +1727,7 @@ i.start-word{
   }
   .item-con p::before,
   .item-con p::after {
-    color: #869791;
+    /*color: #869791;*/
   }
   .project-item{
     margin: 1px 0;
